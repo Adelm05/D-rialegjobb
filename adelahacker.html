@@ -44,11 +44,13 @@ body{
     var greet;
 
     if (hrs < 12)
-        greet = 'Bonjour Adèle!';
+        greet = <b>'Bonjour Adèle!'<b>;
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Bonjour Adèle!';
-    else if (hrs >= 17 && hrs <= 24)
-        greet = 'Bonsoir Adèle!';
+        greet = <b>'Bonjour Adèle!'<b>;
+    else if (hrs >= 17 && hrs <= 21)
+        greet = <b>'Bonsoir Adèle!'<b>;
+    else if (hrs >= 21 && hrs <= 24)
+        greet = <b>'Bonne nuit Adèle!'<b>;
 
     document.getElementById('lbl').innerHTML =
         greet+=`<div id="date"> C'est ${date}</div>`;
