@@ -1,6 +1,6 @@
 <html> 
 <head>
-    <title><b>Greeting Message</b></title> 
+    <title>Greeting Message</title> 
     <style>
 #lbl {
     font-family: 'Chilanka';
@@ -50,7 +50,7 @@ body{
     else if (hrs >= 17 && hrs <= 21)
         greet = 'Bonsoir Adèle!';
     else if (hrs >= 21 && hrs <= 24)
-        greet = 'Bonne nuit Adèle!';
+        greet = '<b>Bonne nuit Adèle!</b>';
 
     document.getElementById('lbl').innerHTML =
         greet+=`<div id="date"> C'est ${date}</div>`;
